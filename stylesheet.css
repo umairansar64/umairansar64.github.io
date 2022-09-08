@@ -1,0 +1,378 @@
+/*<!--  Name: MOHAMMAD UMAIR ANSAR -->
+  <!--  MMU ID: 18040276 -->
+  <!--  Course: INTRODUCTION TO WEB DESIGN AND DEVELOPMENT -->
+  <!--  Assignment: 1CWK25 -->
+  <!--  Page Details: External Style Sheet -->*/
+
+/*Setting the initial values as zero*/
+body, header, footer, p, h1, h2, nav, ul, a, container {
+	
+	margin: 0;
+	
+	padding: 0;
+}
+
+
+
+
+/*Styling the main container*/
+#container {
+	
+	height:100%;
+	
+	border: 3px solid #C0C0C0;
+	
+	border-radius: 5px;
+	
+	background-color: #297AA2;
+	
+	margin: 1%;
+}
+
+
+
+
+
+/*Same style to all the cells*/
+header, nav, content, section, footer {
+	
+	border: 3px solid #297AA2;
+	
+	border-radius: 5px;
+	
+	background-color: #ADC9D7;
+	
+	margin: 5px;
+	
+	padding: 5px;
+	
+	text-align: left;
+}
+
+
+
+
+/*The top header cell styling*/
+header {
+	
+	background-color: #FFFFFF;
+	
+	text-align: center;
+}
+
+	
+	
+	
+	
+/*Styling the navigation starts here....*/
+/*######################################*/
+nav ul {
+	
+	color: blue;
+	
+	text-align: center;
+	
+	margin: 0px;
+	
+}
+
+nav {
+	
+	margin-top: 10px;
+}
+
+nav li, li1 {
+	
+	display: inline; /*displaying navigation in a single line horizontally*/
+	
+	padding: 5px;
+	
+	font-family: calibri;
+	
+	border: 3px solid #297AA2;
+	
+	border-radius: 5px;
+	
+	margin: 1%;
+	
+	background-color: #8DB0C1;
+	
+	line-height: 40px;
+}
+
+nav li1 {
+	
+	background-color: #D8D8D8; /*The page you are navigating gives a different background in nav*/
+}
+
+/*###################################*/
+/*...Styling the navigation ends here*/
+
+
+
+
+
+
+/*Styling the content and section areas*/
+/*#####################################*/
+content, section {
+	
+	width: 45%;
+	
+	float: left;
+	
+	background-color: #297AA2;
+	
+    margin-bottom: 10px;
+	
+	color: #E2EFF6;
+}
+
+content {
+	
+	margin-right: 1px;
+	
+	height: clear-bottom;
+}
+	
+section {
+	
+	margin-right: 5px;
+	
+	margin-left: 7px;
+}
+
+section p, content p, content ul ,section ul {
+	
+	font-size: 20px;          /*Setting the font-size and font-family of the */
+	
+	font-family: Calibri;     /*paragraphs and lists in section and content areas*/
+}
+
+content ul ,section ul {
+	
+	padding-left: 17px;
+}
+
+section h2, content h2 {
+	
+	border: 3px solid #E2EFF6;  /*Styling of the headings in the content...*/
+	
+	background-color: #E2EFF6;  /*...and section areas*/
+	
+	color: black;
+	
+	margin-bottom: 5px;
+	
+	padding: 2px;
+}
+
+content h1, section h1 {
+	
+	font-size: 35px;
+}
+/*Styling the content and section areas ends here*/
+/*######################################*/
+
+
+
+
+
+
+/*Setting the image at a good place (styling the images)*/
+/*#################################*/
+content img, section img {
+	
+	padding: 5px;
+	
+	border: 3px solid #D3D3D3;
+	
+	border-radius: 5px;
+}
+
+
+content img {
+	
+	margin-right: 5px;
+}
+
+
+section img {
+	
+	float: right;
+	
+	margin-left: 5px;
+}
+/*##################################*/
+
+
+
+
+
+
+/*Styling the body*/
+body {
+	
+	background-color: #D3D3D3;
+	
+	width: 100%;
+}
+
+
+
+
+
+/*Styling the tables in the web pages*/
+/*####################################*/
+table {
+	
+	font-family: calibri;
+	
+	font-size: 25px;
+	
+	background-color: #A7C0CD;
+	
+	margin-top: 5px;
+	
+	color: black;
+}
+
+table td {
+	
+	padding: 5px; /*Spaces between the page icons*/
+}
+/*#####################################*/
+
+
+
+
+
+/*Setting the footer at appropriate place*/
+footer {
+	
+	clear: left;
+	
+	text-align: center;
+}
+
+
+
+
+
+/*Class used to set the image in Page3 to the centre*/
+.center {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 10px;
+}
+
+
+
+
+/*TEXT in the Header Area is styled here*/
+.headerText1 {
+	padding-top:2%;
+	padding-bottom:2%;
+	font-size: 35px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+
+
+
+
+/*When the window size is less than 800px the section cell*/
+/*goes below the container cell and takes the width of the*/
+/*container*/
+@media (max-width: 800px)
+{
+	 content {
+		
+	 width: 95%;
+	 
+	 float: left;
+	
+	 margin-right: 5px;
+	
+     }
+	
+     section {	
+	
+	 width: 95%;
+	
+	 float: left;
+	
+	 margin-top: 0px;
+	
+	 margin-bottom: 10px;
+	
+	 margin-left: 5px;
+	
+	 border-top: 3px solid #E2EFF6; /*<---when the section goes below the container */
+	
+	 padding-top: 10px;            /*it draws a line above the section*/
+    
+     }
+
+}
+
+
+
+/*When the width is greater than 800px this separates the*/
+/*content area and the section are with a line...........*/
+@media (min-width: 800px)
+{
+	 content {
+		
+	     border-right: 3px solid #E2EFF6;
+		 
+		 padding-right: 10px;
+	 }
+	 
+}
+
+
+
+
+
+/*Setting the navigation in vertical order when the width of*/
+/*the window goes less than 600px*/
+@media (max-width: 600px)
+{
+	 nav li, li1 { 
+	
+	 display: block;
+	
+	 padding: 0px;
+	
+	 font-family: calibri;
+	
+	 border: 3px solid #297AA2;
+	
+	 border-radius: 5px;
+	
+	 margin: 5px;
+	
+	 background-color: #8DB0C1; 
+	
+	 line-height: 30px;
+	
+	 width: auto;
+	
+	 padding-left: 5px;
+	
+}
+	 nav ul {
+		
+	 text-align: left;
+	 }
+	
+}
+/* End of the code 
+   ############### 
+   ############### 
+
+website used for color codes: https://www.rapidtables.com/web/color/html-color-codes.html */ 
+
